@@ -23,14 +23,120 @@
         be careful
     </button>
     <button onclick="mfunction()">Danger do not alert</button>
-    <style>
-        #gg {
-            background-image: url(./preciousheritage/sports/sport2.png);
-            height: 500px;
-            width: 500px;
-            border-radius: 10px;
-        }
-    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slideshow Example</title>
+    </head>
+
+    <body>
+        <div class="slideshow">
+            <!-- First image with 2 buttons -->
+            <div class="slide slide1">
+                <a href="#" class="my-btn primary">Primary School</a>
+                <a href="#" class="my-btn secondary">Secondary School</a>
+            </div>
+
+            <!-- Second image with 1 button -->
+            <div class="slide slide2">
+                <a href="#" class="my-btn gallery">See Gallery</a>
+            </div>
+
+            <!-- Third -->
+            <div class="slide slide3"></div>
+
+            <!-- Fourth -->
+            <div class="slide slide4"></div>
+
+            <!-- Fifth -->
+            <div class="slide slide5"></div>
+
+            <!-- Sixth -->
+            <div class="slide slide6"></div>
+        </div>
+
+        <style>
+            .slideshow {
+                position: relative;
+                width: 500px;
+                height: 300px;
+                overflow: hidden;
+            }
+
+            .slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0;
+                animation: fade 30s infinite;
+                /* 6 slides × 5s each = 30s total */
+            }
+
+            /* Slides with different timings */
+            .slide1 {
+                background-image: url("./preciousheritage/sports/sport2.png");
+                animation-delay: 0s;
+            }
+
+            .slide2 {
+                background-image: url("./preciousheritage/phc/conta.png");
+                animation-delay: 5s;
+            }
+
+            .slide3 {
+                background-image: url("./preciousheritage/sports/sport16.png");
+                animation-delay: 10s;
+            }
+
+            .slide4 {
+                background-image: url("./preciousheritage/phc/lead2.png");
+                animation-delay: 15s;
+            }
+
+            .slide5 {
+                background-image: url("./preciousheritage/sports/sport14.png");
+                animation-delay: 20s;
+            }
+
+            .slide6 {
+                background-image: url("./preciousheritage/phc/logo.png");
+                animation-delay: 25s;
+            }
+
+            /* Fade animation */
+            @keyframes fade {
+                0% {
+                    opacity: 0;
+                }
+
+                5% {
+                    opacity: 1;
+                }
+
+                20% {
+                    opacity: 1;
+                }
+
+                25% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </body>
+
+    </html>
+
 </body>
 
 </html>
