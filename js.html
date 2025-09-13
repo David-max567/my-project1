@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slideshow</title>
 </head>
 
 <body>
@@ -16,6 +16,7 @@
         }
         function mfunction() {
             window.alert("Arsenal")
+            alert("Hala")
             alert("the Gunners")
         }
     </script>
@@ -26,23 +27,16 @@
     <!DOCTYPE html>
     <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Slideshow Example</title>
-    </head>
-
     <body>
         <div class="slideshow">
             <!-- First image with 2 buttons -->
             <div class="slide slide1">
-                <a href="#" class="my-btn primary">Primary School</a>
-                <a href="#" class="my-btn secondary">Secondary School</a>
+
             </div>
 
             <!-- Second image with 1 button -->
             <div class="slide slide2">
-                <a href="#" class="my-btn gallery">See Gallery</a>
+
             </div>
 
             <!-- Third -->
@@ -64,6 +58,7 @@
                 width: 500px;
                 height: 300px;
                 overflow: hidden;
+                border: solid white;
             }
 
             .slide {
@@ -131,6 +126,12 @@
                 100% {
                     opacity: 0;
                 }
+            }
+            body {
+                background-image: url(./js.png);
+                width: auto;
+                height: auto;
+                background-size: cover;
             }
         </style>
     </body>
